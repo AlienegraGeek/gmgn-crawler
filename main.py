@@ -1,5 +1,5 @@
 # This is a sample Python script.
-from gmgn_request import gm_request
+from gmgn_request import gmgn
 
 
 # Press ⌃R to execute it or replace it with your code.
@@ -13,8 +13,8 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
+    gg = gmgn()
     print_hi('PyCharm')
-    gm_request()
-
+    gg.gm_tls()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
