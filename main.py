@@ -1,5 +1,7 @@
 # This is a sample Python script.
 from gmgn_request import gmgn
+from play import scrape_x_search2
+from sele import baidu_driver,x_driver
 
 
 # Press ⌃R to execute it or replace it with your code.
@@ -13,8 +15,10 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    gg = gmgn()
+    # gg = gmgn()
     print_hi('PyCharm')
-    gg.gm_tls()
+    # gg.gm_tls()
+    scrape_x_search2()
+    # baidu_driver()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
