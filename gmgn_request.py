@@ -34,7 +34,7 @@ class gmgn:
         self.identifier = random.choice([browser for browser in tls_client.settings.ClientIdentifiers.__args__ if
                                          browser.startswith(('chrome', 'safari', 'firefox', 'opera'))])
         self.sendRequest = tls_client.Session(random_tls_extension_order=True, client_identifier=self.identifier)
-
+ # 关键这个random_tls_extension_order设置为 True
         parts = self.identifier.split('_')
         identifier, version, *rest = parts
         other = rest[0] if rest else None
@@ -59,6 +59,7 @@ class gmgn:
             'user-agent': self.user_agent
         }
 
+ #发请求
     def gm_tls(self):
         self.randomise_request()
         url = "https://gmgn.ai/defi/quotation/v1/rank/sol/swaps/1h"
